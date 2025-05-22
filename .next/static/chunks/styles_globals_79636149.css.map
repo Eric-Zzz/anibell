@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/eric/Documents/code/anibell/styles/globals.css"],"sourcesContent":["/*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */\n.mx-auto {\n  margin-inline: auto;\n}\n.grid {\n  display: grid;\n}\n.w-full {\n  width: 100%;\n}\n.grid-cols-1 {\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.object-cover {\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n"],"names":[],"mappings":"AACA;;;;AAGA;;;;AAGA;;;;AAGA;;;;AAGA","debugId":null}}]
+}

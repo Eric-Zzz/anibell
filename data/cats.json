@@ -1,0 +1,11 @@
+[
+  {
+    "id": "mimi001",
+    "name": "咪咪",
+    "age": "2个月",
+    "breed": "英短蓝白",
+    "gender": "母",
+    "vaccinated": true,
+    "images": ["/cats/mimi001.jpg"]
+  }
+]

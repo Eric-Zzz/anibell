@@ -1,0 +1,24 @@
+/* [project]/styles/globals.css [client] (css) */
+.mx-auto {
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+
+/*# sourceMappingURL=styles_globals_79636149.css.map*/
