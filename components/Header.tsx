@@ -33,7 +33,7 @@ export default function Header() {
             }}
           >
             <Link href="/" passHref style={{ color: 'white', textDecoration: 'none' }}>
-              AnibellRagdolls
+              Anibell Ragdolls
             </Link>
           </Typography>
 
