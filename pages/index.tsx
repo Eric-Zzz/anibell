@@ -1,15 +1,21 @@
-import CatCard from "@/components/CatCard";
-import cats from "@/data/cats.json";
+import { Container, Grid, Typography } from '@mui/material';
+import cats from '@/data/cats.json';
+import CatCard from '@/components/CatCard';
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">欢迎来到我们的猫舍</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <Container sx={{ py: 6 }}>
+      <Typography variant="h3" align="center" gutterBottom>
+        欢迎来到我们的猫舍 🐾
+      </Typography>
+
+      <Grid container spacing={4}>
         {cats.map((cat) => (
-          <CatCard key={cat.id} cat={cat} />
+          <Grid  size={{ xs: 12,sm:6, md: 4 }} key={cat.id} >
+            <CatCard cat={cat} />
+          </Grid>
         ))}
-      </div>
-    </main>
+      </Grid>
+    </Container>
   );
 }

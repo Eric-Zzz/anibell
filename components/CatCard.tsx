@@ -1,3 +1,5 @@
+import { Card, CardMedia, CardContent, Typography } from '@mui/material';
+
 type Cat = {
   id: string;
   name: string;
@@ -10,15 +12,21 @@ type Cat = {
 
 export default function CatCard({ cat }: { cat: Cat }) {
   return (
-    <div className="bg-white shadow-md rounded-lg p-4">
-      <img
-        src={cat.images[0]}
+    <Card>
+      <CardMedia
+        component="img"
+        height="200"
+        image={cat.images[0]}
         alt={cat.name}
-        className="w-full h-48 object-cover rounded"
       />
-      <h2 className="text-xl font-bold mt-2">{cat.name}</h2>
-      <p className="text-gray-600">年龄：{cat.age}</p>
-      <p className="text-gray-600">品种：{cat.breed}</p>
-    </div>
+      <CardContent>
+        <Typography variant="h6">{cat.name}</Typography>
+        <Typography color="text.secondary">年龄：{cat.age}</Typography>
+        <Typography color="text.secondary">品种：{cat.breed}</Typography>
+        <Typography color="text.secondary">
+          性别：{cat.gender} ｜ 疫苗：{cat.vaccinated ? '已接种' : '未接种'}
+        </Typography>
+      </CardContent>
+    </Card>
   );
 }
